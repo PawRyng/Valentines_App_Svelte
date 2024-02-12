@@ -1,0 +1,26 @@
+main{
+    .button{
+        &__item{
+            &[disabled]{
+                opacity: .6;
+                cursor: no-drop;
+            }
+        }
+        input{
+            box-sizing: border-box;
+            padding: 9px;
+        }
+    }
+    .link{
+        margin-block-start: 20px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 5px;
+        align-items: center;
+        button{
+            background-color: transparent;
+            border: none;
+            cursor: copy;
+        }
+    }
+}

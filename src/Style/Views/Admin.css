@@ -1,0 +1,1 @@
+main .button__item[disabled]{opacity:.6;cursor:no-drop}main .button input{box-sizing:border-box;padding:9px}main .link{margin-block-start:20px;display:flex;justify-content:flex-start;gap:5px;align-items:center}main .link button{background-color:rgba(0,0,0,0);border:none;cursor:copy}

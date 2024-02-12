@@ -1,0 +1,31 @@
+{
+    "home":{
+        "title": "Zostaniesz moją walentynką?",
+        "changeNo": [
+            "Nie",
+            "Jesteś pewna?",
+            "Naprawdę nie?",
+            "Na pewno nie?",
+            "Na 100% ?",
+            "Przemyśl to!",
+            "Ostatnia szansa!",
+            "Pomyśl tylko o tym",
+            "Jeśli odmówisz, będę bardzo smutny",
+            "Będę bardzo smutny",
+            "Będę bardzo bardzo smutny",
+            "Będę bardzo bardzo bardzo smutny",
+            "Dobra, przestanę pytać...",
+            "Żartuję, PROSZĘ POWIEDZ TAK",
+            "Łamiesz mi serce"
+        ]
+    },
+    "ok":{
+        "title": "Ok Suuuuper!❤️",
+        "url": "ok"
+    },
+    "admin":{
+        "title": "Wpisz imię i naciśnij generuj",
+        "url": "admin"
+    }
+
+}
