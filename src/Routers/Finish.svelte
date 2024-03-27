@@ -21,6 +21,9 @@
         
         // Pobierz wartość parametru 'q'
         const quantityParam:queryParamType = urlParams.get('q');
+        // Pobierz wartość parametru 'uid'
+        name = urlParams.get('uid');
+        
         if(name){
             const nameDecoded = CryptoJS.AES.decrypt(decodeURIComponent(name), import.meta.env.VITE_SECRET_KEY).toString(CryptoJS.enc.Utf8);
             axios.post(`https://api.telegram.org/bot${import.meta.env.VITE_TELEGRAM_BOT_TOKKEN}/sendMessage`, {

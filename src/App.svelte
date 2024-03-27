@@ -14,12 +14,12 @@
 
 <Router>
   <Route path="/" component={Home} />
-  <Route path="/:name" let:params>
-    <Home name="{params.name}"/>
+  <Route path="/">
+    <Home />
   </Route>
   <Route path={`/${settings.ok.url}`} component={Finish} />
-  <Route path={`/${settings.ok.url}/:name`} let:params >
-    <Finish name="{params.name}"/>
+  <Route path={`/${settings.ok.url}`}>
+    <Finish/>
   </Route>
   <Route path={`/${settings.admin.url}`} component={Admin} />
 

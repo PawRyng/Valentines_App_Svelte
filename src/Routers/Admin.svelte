@@ -13,7 +13,7 @@
     
     const generateLink = ()=>{
         const encrypted: string = CryptoJS.AES.encrypt(name, import.meta.env.VITE_SECRET_KEY).toString();
-        link = `${window.location.host}/${encodeURIComponent(encrypted)}`
+        link = `${window.location.host}?uid=${encodeURIComponent(encrypted)}`
     } 
 
 const coppyHandler = e => {
