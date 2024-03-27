@@ -38,7 +38,7 @@
     <img src="{LoveBear}" alt="Loved bear">
     <h2>{home.title}</h2>
     <div class="button">
-        <Link class="button__item button__item--yes" to={`/${ok.url}${uid ? '?uid='+uid+'&q='+(fontSize-1) : '?q='+(fontSize-1)}`} style="font-size: {fontSize }em">Tak</Link>
+        <Link class="button__item button__item--yes" to={`/${ok.url}${uid ? '?uid='+encodeURIComponent(uid)+'&q='+(fontSize-1) : '?q='+(fontSize-1)}`} style="font-size: {fontSize }em">Tak</Link>
         <button class="button__item button__item--no" on:click={increaseFont}>{showTitleToButtonNo(fontSize - 1)}</button>
     </div>
 
