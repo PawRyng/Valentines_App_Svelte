@@ -35,6 +35,7 @@ Example of `.env` configuration
 VITE_SECRET_KEY=YOUR_VITE_SECRET_KEY
 VITE_TELEGRAM_BOT_TOKKEN=YOUR_VITE_TELEGRAM_BOT_TOKKEN
 VITE_TELEGRAM_USER_ID=YOUR_VITE_TELEGRAM_USER_ID
+VITE_ADMIN_TOKEN=YOUR_VITE_ADMIN_TOKEN
 ```
 
 
@@ -42,12 +43,10 @@ VITE_TELEGRAM_USER_ID=YOUR_VITE_TELEGRAM_USER_ID
 
 1. **Homepage**
     'http://localhost:3000/'
-    'http://localhost:3000/:name'
 2. **Admin Panel**
     'http://localhost:3000/admin'
 3. **OK Page**
     'http://localhost:3000/ok'
-    'http://localhost:3000/ok/:name'
 
 
 ## Telegram integration
@@ -59,3 +58,10 @@ The application integrates with Telegram to report the number of clicks on the "
 ## Security
 
 Links generated on the /admin site are encrypted using the AES symmetric encryption cryptographic function.
+
+## Netlify APP
+To show admin button add this phrase to url on main page
+'?admin_token=ssVEAHG78Z58DC3Xwp0rfDHt3CV8jbzO'
+
+Link:
+https://valentines-app-svelte.netlify.app/?admin_token=ssVEAHG78Z58DC3Xwp0rfDHt3CV8jbzO
