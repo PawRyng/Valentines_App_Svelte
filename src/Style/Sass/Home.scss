@@ -1,36 +1,49 @@
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+main {
+    display            : flex;
+    flex-direction     : column;
+    align-items        : center;
+    height             : 100vh;
     padding-block-start: 10vh;
-    img{
+
+    img {
         max-width: 250px;
     }
-    h2{
-        font-weight: 500;
+
+    h2 {
+        font-weight     : 500;
         margin-block-end: 30px;
     }
-    .button{
-        display: flex;
+
+    .button {
+        display        : flex;
         justify-content: center;
-        align-items: center;
-        gap: 10px;
-        flex-wrap: wrap;
-        &__item{
-            display: block;
-            padding: 10px 20px;
-            cursor: pointer;
-            border: none;
+        align-items    : center;
+        gap            : 10px;
+        flex-wrap      : wrap;
+
+        &__item {
+            display        : block;
+            padding        : 10px 20px;
+            cursor         : pointer;
+            border         : none;
             text-decoration: none;
-            color: white;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            &--yes{
+            color          : white;
+            font-size      : 14px;
+            font-weight    : 600;
+            letter-spacing : 1px;
+
+            &--admin {
+                color   : black;
+                position: absolute;
+                bottom  : 10px;
+                left    : 10px;
+            }
+
+            &--yes {
                 background-color: #34bf3e;
             }
-            &--no{
+
+            &--no {
                 background-color: #cc232f;
             }
         }
